@@ -14,5 +14,7 @@ public class HealeniumTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get("https://www.saucedemo.com/v1/inventory.html");
         driver.findElement(By.xpath("//div[text()='Sauce Labs Backpack']")).click();
+        driver.findElement(By.xpath("//button[@class='btn_primary btn_inventory']")).click();
+        System.out.println("test passed successfully ");
     }
 }
